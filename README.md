@@ -6,8 +6,8 @@ Anggota:
 </ul>
 Pembagian Tugas:
 <ul>
-  <li>Soal 1 (Siapa)</li>
-  <li>Soal 2 (Siapa)</li>
-  <li>Soal 3 (Siapa)</li>
+  <li>Soal 1 (Baktiar)</li>
+  <li>Soal 2 (Baktiar)</li>
+  <li>Soal 3 (Addin)</li>
 </ul>
 
