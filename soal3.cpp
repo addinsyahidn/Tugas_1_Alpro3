@@ -5,23 +5,26 @@
     dan menampilkan output dalam format: X detik = H jam M menit S detik
 */
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
-    int dtk, hri, jam, mnt;
-    printf("Masukkan detik\t= "); scanf("%d", &dtk);
-
-    hri = dtk / 86400;
-    // Hitung jumlah hari (1 hari = 86400 detik)
+    int X, H, M, S;
+    // Karena yang dibutuhkan bilangan Bulat
+    cout << "Masukkan detik\t= "; cin >> X;
+    // Input detik awal hasil
     
-    jam = (dtk % 86400) / 3600;
-    // Hitung sisa detik setelah dikurangi hari yang bulat, lalu bagi 3600 untuk mendapat jam
+    H = X / 3600;
+    // Hitung jumlah hari (1 Jam = 3600 detik)
     
-    mnt = (dtk % 3600) / 60;
-    // Hitung sisa detik setelah dikurangi jam yang bulat, lalu bagi 60 untuk mendapat menit
+    M = (X % 3600) / 60;
+    // Hitung sisa detik setelah dikurangi jam yang bulat, lalu bagi 60 untuk mendapat jam
+    
+    S = X % 60;
+    // Hitung sisa detik setelah dikurangi mnt yang bulat
 
-    printf("%d detik\t= %d hari %d jam %d menit %d detik", dtk, hri, jam, mnt, (dtk % 60));
-    // Sisa bagi 60 memberikan sisa detik murni yang tidak bisa jadi menit
+    cout << X << " detik\t= " << H << " jam " << M << " menit " << S << " detik";
+    // Output hasil dengan format yang sesuai
     
     return 0;
 }
